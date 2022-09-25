@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnConnectRoku = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnConnectRoku
+            // 
+            this.btnConnectRoku.Location = new System.Drawing.Point(10, 9);
+            this.btnConnectRoku.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnConnectRoku.Name = "btnConnectRoku";
+            this.btnConnectRoku.Size = new System.Drawing.Size(150, 40);
+            this.btnConnectRoku.TabIndex = 0;
+            this.btnConnectRoku.Text = "Connect to Roku";
+            this.btnConnectRoku.UseVisualStyleBackColor = true;
+            this.btnConnectRoku.Click += new System.EventHandler(this.btnConnectRoku_Click);
+            // 
+            // FrmMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(700, 338);
+            this.Controls.Add(this.btnConnectRoku);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "FrmMain";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Button btnConnectRoku;
     }
 }
